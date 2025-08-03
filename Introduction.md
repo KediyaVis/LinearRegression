@@ -28,11 +28,9 @@ Linear Regression is a fundamental supervised machine learning technique used to
 ## Mathematical Formulation
 
 
-
-\[
+$$
 y = \beta_0 + \beta_1 x + \varepsilon
-\]
-
+$$
 
 
 Where:  
