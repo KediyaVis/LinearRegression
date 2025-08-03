@@ -33,12 +33,12 @@ y = \beta_0 + \beta_1 x + \varepsilon
 $$
 
 
-Where:  
-- \( y \): Predicted output  
-- \( x \): Input feature  
-- \( \beta_0 \): Intercept  
-- \( \beta_1 \): Slope  
-- \( \varepsilon \): Error term
+Where:
+- (y): Predicted output
+- (x): Input feature
+- (β₀): Intercept
+- (β₁): Slope
+- (ε): Error term
 
 ---
 
