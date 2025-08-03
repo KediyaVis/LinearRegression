@@ -1,63 +1,81 @@
 # Introduction to Linear Regression
 
-## 1. What is Linear Regression?
-Linear Regression is one of the most fundamental supervised machine learning algorithms used for predicting continuous outcomes.
-
-It models the relationship between:
-- Dependent variable (Target) — what we want to predict
-- Independent variable(s) (Features) — inputs used to make the prediction
+Linear Regression is a fundamental supervised machine learning technique used to predict continuous outcomes by modeling the relationship between a dependent variable and one or more independent variables.
 
 ---
 
-## 2. Real-World Examples
+## Key Concepts
 
-| Domain       | Example Use Case |
-|--------------|------------------|
-| Business     | Predict monthly sales from advertising spend |
-| Finance      | Estimate house prices from location and size |
-| HR           | Predict employee salaries from experience |
-| Healthcare   | Estimate blood pressure from age and weight |
+- **Dependent Variable (Target)**: The outcome we want to predict
+- **Independent Variables (Features)**: Inputs used for prediction
+- **Regression Line**: Line of best fit through the data
+- **Residuals**: Differences between predicted and actual values
 
 ---
 
-## 3. Types of Linear Regression
+## Types of Linear Regression
 
-1. **Simple Linear Regression** — one predictor variable  
-   Example: Predicting salary from years of experience.
-   
-2. **Multiple Linear Regression** — two or more predictors  
-   Example: Predicting house price from size, bedrooms, and location.
+1. **Simple Linear Regression**  
+   - Involves one predictor  
+   - Example: Predicting salary based on years of experience
+
+2. **Multiple Linear Regression**  
+   - Involves two or more predictors  
+   - Example: Predicting house price based on size, location, and number of bedrooms
 
 ---
 
-## 4. Mathematical Formulation
+## Mathematical Formulation
 
-### Simple Linear Regression
+
+
 \[
 y = \beta_0 + \beta_1 x + \varepsilon
 \]
 
-Where:
-- \( y \) = Target variable (e.g., Salary)
-- \( x \) = Predictor variable (e.g., Years of Experience)
-- \( \beta_0 \) = Intercept (value of \(y\) when \(x=0\))
-- \( \beta_1 \) = Slope (effect of one unit change in \(x\) on \(y\))
-- \( \varepsilon \) = Error term
+
+
+Where:  
+- \( y \): Predicted output  
+- \( x \): Input feature  
+- \( \beta_0 \): Intercept  
+- \( \beta_1 \): Slope  
+- \( \varepsilon \): Error term
 
 ---
 
-## 5. How Does Linear Regression Work?
+## Real-World Applications
 
-It finds the best-fitting line through the data points by minimizing the **Sum of Squared Errors (SSE)** between predicted and actual values.
-
-**Ordinary Least Squares (OLS)** is the most common method used.
+| Domain     | Use Case                                          |
+|------------|---------------------------------------------------|
+| Business   | Forecasting sales based on advertising budget     |
+| Finance    | Predicting stock returns based on economic indicators |
+| Healthcare | Estimating blood pressure using patient metrics   |
+| HR         | Predicting salaries based on job experience       |
 
 ---
 
-## 6. Assumptions of Linear Regression
+## Assumptions of Linear Regression
 
-1. **Linearity** — Relationship between predictors and target is linear.  
-2. **Independence** — Observations are independent of each other.  
-3. **Homoscedasticity** — Constant variance of residuals.  
-4. **Normality** — Residuals should be normally distributed.  
-5. **No Multicollinearity** — Predictors are not highly correlated (for multiple regression).
+1. **Linearity**: Linear relationship between input and output  
+2. **Independence**: Observations are independent  
+3. **Homoscedasticity**: Constant variance of residuals  
+4. **Normality**: Residuals are normally distributed  
+5. **No Multicollinearity**: Inputs are not highly correlated
+
+---
+
+## Mermaid Diagram – Conceptual Flow of Simple Linear Regression
+
+```mermaid
+graph TD
+    A[Input Feature: Years of Experience]
+    B[Linear Model: y = β₀ + β₁x]
+    C[Predicted Salary]
+    D[Compare with Actual Salary]
+    E[Calculate Residuals]
+    F[Minimize Residual Sum of Squares]
+
+    A --> B --> C --> D --> E --> F
+```
+
