@@ -63,7 +63,7 @@ Where:
 
 ---
 
-## Mermaid Diagram – Conceptual Flow of Simple Linear Regression
+## Conceptual Flow of Simple Linear Regression
 
 ```mermaid
 graph TD
