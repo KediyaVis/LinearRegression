@@ -21,9 +21,9 @@ $$
 
 Regularization modifies the original loss function by **adding a penalty** on the magnitude of the coefficients. The new loss function becomes:
 
-\[
+$$
 \text{Loss} = \text{RSS} + \lambda \cdot \text{Penalty}
-\]
+$$
 
 Where:
 
@@ -39,9 +39,9 @@ Where:
 
 Adds a **squared penalty** on coefficients:
 
-\[
+$$
 \text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
-\]
+$$
 
 **Characteristics**:
 - Shrinks all coefficients toward zero but **never exactly to zero**
@@ -54,9 +54,9 @@ Adds a **squared penalty** on coefficients:
 
 Adds an **absolute value penalty** on coefficients:
 
-\[
+$$
 \text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |w_j|
-\]
+$$
 
 **Characteristics**:
 - Can shrink some coefficients **exactly to zero**
@@ -69,9 +69,9 @@ Adds an **absolute value penalty** on coefficients:
 
 Combines **L1 and L2** penalties:
 
-\[
+$$
 \text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda_1 \sum_{j=1}^{p}|w_j| + \lambda_2 \sum_{j=1}^{p}w_j^2
-\]
+$$
 
 **Why use it?**
 - Balances the benefits of Ridge and Lasso
