@@ -20,9 +20,8 @@ $$
 
 Adds the **squared magnitude** of the coefficients:
 
-\[
-\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
-\]
+Loss = Σ (y_i − ŷ_i)²  +  λ · Σ (w_j)²
+
 
 $$
 \text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
