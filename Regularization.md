@@ -3,6 +3,9 @@
 ##  What Is Regularization?
 
 ![Regularization](Regularization.png.png)
+
+<img src="Regularization.png.png" width="75%" alt="Regularization Chart" />
+
 RRegularization is a technique used to **prevent overfitting** by adding a **penalty term** to the loss function.  
 In linear regression, we normally minimize the **Residual Sum of Squares (RSS)**:
 
