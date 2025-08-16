@@ -2,17 +2,18 @@
 
 ##  What Is Regularization?
 
-Regularization is a technique used to **prevent overfitting** in machine learning models by adding a **penalty term** to the loss function.  
-In the context of linear regression, regularization discourages overly complex models by shrinking the coefficient values (weights).
+RRegularization is a technique used to **prevent overfitting** by adding a **penalty term** to the loss function.  
+In linear regression, we normally minimize the **Residual Sum of Squares (RSS)**:
 
-In simple linear regression, we typically minimize the **Residual Sum of Squares (RSS)**:
-
-\[
+$$
 \text{RSS} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-\]
+$$
 
-However, if we use too many features or the data has noise, our model might fit the training data too well, resulting in poor generalization to new data.
+Regularization modifies this by adding a penalty on the weight magnitudes:
 
+$$
+\text{Loss} = \text{RSS} + \lambda \cdot \text{Penalty}
+$$
 ---
 
 ## ⚙ How Regularization Works
