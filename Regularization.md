@@ -37,9 +37,8 @@ $$
 
 Adds the **absolute value** of the coefficients:
 
-$$
-\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |\,w_j\,|
-$$
+Loss = Σ (y_i − ŷ_i)²  +  λ · Σ |w_j|
+
 
 - Can shrink some coefficients **exactly** to zero  
 - Performs **feature selection**  
@@ -51,11 +50,8 @@ $$
 
 Combines both penalties:
 
-$$
-\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-+ \lambda_1 \sum_{j=1}^{p} |\,w_j\,|
-+ \lambda_2 \sum_{j=1}^{p} w_j^2
-$$
+Loss = Σ (y_i − ŷ_i)²  +  λ₁ · Σ |w_j|  +  λ₂ · Σ (w_j)²
+
 
 - Balances feature selection (L1) and coefficient shrinkage (L2)
 
