@@ -21,7 +21,7 @@ $$
 Adds the **squared magnitude** of the coefficients:
 
 $$
-\text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
+\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
 $$
 
 - Shrinks weights continuously toward zero  
@@ -35,7 +35,7 @@ $$
 Adds the **absolute value** of the coefficients:
 
 $$
-\text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |w_j|
+\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |\,w_j\,|
 $$
 
 - Can shrink some coefficients **exactly** to zero  
@@ -49,10 +49,9 @@ $$
 Combines both penalties:
 
 $$
-\text{Loss} =
-\sum_{i=1}^{n}(y_i - \hat{y}_i)^2 +
-\lambda_1 \sum_{j=1}^{p}|w_j| +
-\lambda_2 \sum_{j=1}^{p}w_j^2
+\text{Loss} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
++ \lambda_1 \sum_{j=1}^{p} |\,w_j\,|
++ \lambda_2 \sum_{j=1}^{p} w_j^2
 $$
 
 - Balances feature selection (L1) and coefficient shrinkage (L2)
