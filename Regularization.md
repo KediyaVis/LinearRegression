@@ -14,6 +14,7 @@ Regularization modifies this by adding a penalty on the weight magnitudes:
 $$
 \text{Loss} = \text{RSS} + \lambda \cdot \text{Penalty}
 $$
+
 ---
 
 ## ⚙ How Regularization Works
