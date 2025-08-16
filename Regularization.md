@@ -6,7 +6,7 @@ RRegularization is a technique used to **prevent overfitting** by adding a **pen
 In linear regression, we normally minimize the **Residual Sum of Squares (RSS)**:
 
 $$
-\text{RSS} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\text{Loss} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} w_j^2
 $$
 
 Regularization modifies this by adding a penalty on the weight magnitudes:
